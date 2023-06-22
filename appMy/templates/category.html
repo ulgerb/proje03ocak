@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,19 +13,21 @@
    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet" />
    <title>Anasayfa</title>
 </head>
+
 <body>
-   
+
    <header>
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
          <!-- Container wrapper -->
          <div class="container">
             <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent"
-               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+               data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
                <i class="fas fa-bars"></i>
             </button>
-      
+
             <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <!-- Navbar brand -->
@@ -44,18 +47,18 @@
                <!-- Left links -->
             </div>
             <!-- Collapsible wrapper -->
-      
+
             <!-- Right elements -->
             <div class="d-flex align-items-center">
                <!-- Icon -->
                <a class="text-reset me-3" href="#">
                   <i class="fas fa-shopping-cart"></i>
                </a>
-      
+
                <!-- Notifications -->
                <div class="dropdown">
-                  <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink" role="button"
-                     data-mdb-toggle="dropdown" aria-expanded="false">
+                  <a class="text-reset me-3 dropdown-toggle hidden-arrow" href="#" id="navbarDropdownMenuLink"
+                     role="button" data-mdb-toggle="dropdown" aria-expanded="false">
                      <i class="fas fa-bell"></i>
                      <span class="badge rounded-pill badge-notification bg-danger">1</span>
                   </a>
@@ -100,68 +103,6 @@
 
    <main>
       <div class="container">
-         <div class="row" style="height: 400px; box-shadow: 0px 4px 6px -6px #00000090;">
-            <div class="col-6 d-flex align-items-center">
-               <div class="getstart">
-                  <img width="100px" style=" transform: rotateY(180deg);" src="{% static 'img/dina.svg' %}" alt="">
-                  <h3>Nerden Başlıyoruz.</h3>
-                  <div class="btn btn-primary my-3">Get Started</div>
-               </div>
-            </div>
-            <div class="col-6">
-               <img width="100%" height="400px" src="{% static 'img/poly.png' %}" alt="">
-            </div>
-         </div>
-         
-         <div class="row mt-3">
-            <div class="col-6">
-               <div class="card mb-3" style="max-width: 540px;">
-                  <div class="row g-0">
-                     <div class="col-md-4">
-                        <img src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp" alt="Trendy Pants and Shoes"
-                           class="img-fluid rounded-start" />
-                     </div>
-                     <div class="col-md-8">
-                        <div class="card-body">
-                           <h5 class="card-title">Card title</h5>
-                           <p class="card-text">
-                              This is a wider card with supporting text below as a natural lead-in to
-                              additional content. This content is a little bit longer.
-                           </p>
-                           <p class="card-text">
-                              <small class="text-muted">Last updated 3 mins ago</small>
-                           </p>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-
-            <div class="col-6 d-flex justify-content-end">
-               <div class="card mb-3" style="max-width: 540px;">
-                  <div class="row g-0">
-                     <div class="col-md-8">
-                        <div class="card-body">
-                           <h5 class="card-title">Card title</h5>
-                           <p class="card-text">
-                              This is a wider card with supporting text below as a natural lead-in to
-                              additional content. This content is a little bit longer.
-                           </p>
-                           <p class="card-text">
-                              <small class="text-muted">Last updated 3 mins ago</small>
-                           </p>
-                        </div>
-                     </div>
-                     <div class="col-md-4">
-                        <img src="https://mdbcdn.b-cdn.net/wp-content/uploads/2020/06/vertical.webp" alt="Trendy Pants and Shoes"
-                           class="img-fluid rounded-start" />
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-
-         <!-- CARDS -->
          <div class="row mt-5">
             <div class="row col-9">
                <h3>Kartlar</h3>
@@ -175,8 +116,7 @@
                      </div>
                      <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                           card's
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                            content.</p>
                         <a href="#!" class="btn btn-primary">Button</a>
                      </div>
@@ -192,8 +132,7 @@
                      </div>
                      <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                           card's
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                            content.</p>
                         <a href="#!" class="btn btn-primary">Button</a>
                      </div>
@@ -209,8 +148,7 @@
                      </div>
                      <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                           card's
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                            content.</p>
                         <a href="#!" class="btn btn-primary">Button</a>
                      </div>
@@ -226,15 +164,14 @@
                      </div>
                      <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                           card's
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
                            content.</p>
                         <a href="#!" class="btn btn-primary">Button</a>
                      </div>
                   </div>
                </div>
             </div>
-         
+            
             <div class="col-3">
                <h3>Kategori</h3>
                <ol class="list-group list-group-light list-group-numbered">
@@ -262,6 +199,7 @@
                </ol>
             </div>
          </div>
+
       </div>
    </main>
 
@@ -273,26 +211,28 @@
          <!-- Section: Social media -->
          <section class="mb-4">
             <!-- Facebook -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
-   
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-facebook-f"></i></a>
+
             <!-- Twitter -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-   
+
             <!-- Google -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-   
+
             <!-- Instagram -->
-            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-   
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+                  class="fab fa-instagram"></i></a>
+
             <!-- Linkedin -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
                   class="fab fa-linkedin-in"></i></a>
-   
+
             <!-- Github -->
             <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
          </section>
          <!-- Section: Social media -->
-   
+
          <!-- Section: Form -->
          <section class="">
             <form action="">
@@ -305,7 +245,7 @@
                      </p>
                   </div>
                   <!--Grid column-->
-   
+
                   <!--Grid column-->
                   <div class="col-md-5 col-12">
                      <!-- Email input -->
@@ -315,7 +255,7 @@
                      </div>
                   </div>
                   <!--Grid column-->
-   
+
                   <!--Grid column-->
                   <div class="col-auto">
                      <!-- Submit button -->
@@ -329,7 +269,7 @@
             </form>
          </section>
          <!-- Section: Form -->
-   
+
          <!-- Section: Text -->
          <section class="mb-4">
             <p>
@@ -339,7 +279,7 @@
             </p>
          </section>
          <!-- Section: Text -->
-   
+
          <!-- Section: Links -->
          <section class="">
             <!--Grid row-->
@@ -347,7 +287,7 @@
                <!--Grid column-->
                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                   <h5 class="text-uppercase">Links</h5>
-   
+
                   <ul class="list-unstyled mb-0">
                      <li>
                         <a href="#!" class="text-white">Link 1</a>
@@ -364,11 +304,11 @@
                   </ul>
                </div>
                <!--Grid column-->
-   
+
                <!--Grid column-->
                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                   <h5 class="text-uppercase">Links</h5>
-   
+
                   <ul class="list-unstyled mb-0">
                      <li>
                         <a href="#!" class="text-white">Link 1</a>
@@ -385,11 +325,11 @@
                   </ul>
                </div>
                <!--Grid column-->
-   
+
                <!--Grid column-->
                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                   <h5 class="text-uppercase">Links</h5>
-   
+
                   <ul class="list-unstyled mb-0">
                      <li>
                         <a href="#!" class="text-white">Link 1</a>
@@ -406,11 +346,11 @@
                   </ul>
                </div>
                <!--Grid column-->
-   
+
                <!--Grid column-->
                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                   <h5 class="text-uppercase">Links</h5>
-   
+
                   <ul class="list-unstyled mb-0">
                      <li>
                         <a href="#!" class="text-white">Link 1</a>
@@ -433,7 +373,7 @@
          <!-- Section: Links -->
       </div>
       <!-- Grid container -->
-   
+
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
          © 2020 Copyright:
@@ -446,4 +386,5 @@
    <!-- MDB -->
    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
 </body>
+
 </html>
