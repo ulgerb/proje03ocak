@@ -23,7 +23,7 @@ from appMy.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', indexPage),
-    path('detail', detailPage),
+    path('detail/<idcard>', detailPage),
     path('category', categoryPage),
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

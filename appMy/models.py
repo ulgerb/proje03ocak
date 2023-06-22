@@ -20,6 +20,7 @@ class Card(models.Model):
    price = models.FloatField(("Fiyat"))
    isactive = models.BooleanField(("Aktif Kart"))
    date_now = models.DateField(("Tarih"), auto_now_add=False)
+   new = models.BooleanField(("Yeni Ürün"), default=True)
 
    def __str__(self):
       return self.title
