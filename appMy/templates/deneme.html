@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+{% block main %}
+   <main class="my-5 py-5">
+      <h1>FORM KURALLARI</h1>
+      <ol>
+         <li>form methodu POST olucak</li>
+         <li>csrf token olucak</li>
+         <li>inputların name'leri olucak</li>
+         <li>button submit olucak</li>
+      </ol>
+      <h3>FORM POST</h3>
+      <form method="POST">
+         {% csrf_token %}
+         <input type="text" name="fname" placeholder="İsim">
+         <input type="text" name="lname" placeholder="Soyisim">
+         <input type="text" name="from" placeholder="Memleket">
+         <button type="submit">Gönder</button>
+      </form>
+
+      <h3>FORM GET</h3>
+      <form method="GET">
+         <input name="text" type="text">
+         <button type="submit">Gönder</button>
+      </form>
+   </main>
+{% endblock main %}
+   

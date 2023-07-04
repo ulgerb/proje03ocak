@@ -24,6 +24,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', indexPage),
     path('detail/<idcard>', detailPage),
+    path('category/<ctitle>', categoryPage),
     path('category', categoryPage),
+    path('deneme', denemePage),
+    
     
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
