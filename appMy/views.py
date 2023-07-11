@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect # yönlendirme
 from .models import *
 
 # Create your views here.
@@ -23,10 +23,22 @@ def indexPage(request):
 
 
 def detailPage(request, idcard):
-   print(idcard)
    card = Card.objects.get(id=idcard)
+   comments = Comment.objects.filter(card=card)
+   
+   if request.method == "POST":
+      fname = request.POST.get("fname")
+      text = request.POST.get("text")
+      
+      comment = Comment(fname=fname, text=text, card=card) 
+      comment.save()
+      
+      return redirect('/detail/'+idcard)
+      
+   
    context = {
       "card":card,
+      "comments": comments,
    }
    return render(request, 'detail.html', context)
 

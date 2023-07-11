@@ -24,3 +24,13 @@ class Card(models.Model):
 
    def __str__(self):
       return self.title
+
+
+class Comment(models.Model):
+   card = models.ForeignKey(Card, verbose_name=("Kart"), on_delete=models.CASCADE, null=True)
+   fname = models.CharField(("İsim Soyisim"), max_length=50)
+   text = models.TextField(("Yorum"))
+   date_now = models.DateTimeField(("Tarih - Saat"), auto_now_add=True)
+   
+   def __str__(self):
+      return self.fname

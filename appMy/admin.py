@@ -5,3 +5,4 @@ from .models import *
 
 admin.site.register(Category)
 admin.site.register(Card)
+admin.site.register(Comment) 
